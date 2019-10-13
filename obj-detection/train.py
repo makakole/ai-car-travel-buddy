@@ -184,5 +184,11 @@ if __name__ == '__main__':
   tf.app.run()
 
 
-# python train.py --logtostderr --model_dir=/home/mk/dev/ai-car-travel-buddy/obj-detection/training/ --pipeline_config_path=/home/mk/dev/ai-car-travel-buddy/obj-detection/training/faster_rcnn_inception_v2_pets.config --train_dir=/home/mk/dev/ai-car-travel-buddy/obj-detection/training
+# export PYTHONPATH=$PYTHONPATH:/home/mk/dev/ai-car-travel-buddy/obj-detection/models/research
+# export PYTHONPATH=$PYTHONPATH:/home/mk/dev/ai-car-travel-buddy/obj-detection/models/research/object_detection
+# export PYTHONPATH=$PYTHONPATH:/home/mk/dev/ai-car-travel-buddy/obj-detection/models/research/slim
+
+# python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-571 --output_directory inference_graph
+
+# python model_main.py --logtostderr --model_dir=/home/mk/dev/ai-car-travel-buddy/obj-detection/training/ --pipeline_config_path=/home/mk/dev/ai-car-travel-buddy/obj-detection/training/faster_rcnn_inception_v2_pets.config --train_dir=/home/mk/dev/ai-car-travel-buddy/obj-detection/training
 
