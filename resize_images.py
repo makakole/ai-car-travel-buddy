@@ -14,3 +14,5 @@ if __name__ == '__main__':
     parser.add_argument('-s', '--size', type=int, nargs=2, required=True, metavar=('width', 'height'), help='Image size')
     args = parser.parse_args()
     rescale_images(args.directory, args.size)
+
+
