@@ -1,0 +1,26 @@
+<annotation>
+	<folder>training</folder>
+	<filename>images - 2019-10-12T155326.272.jpg</filename>
+	<path>/home/mk/dev/ai-car-travel-buddy/images/training/images - 2019-10-12T155326.272.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>gun</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>50</xmin>
+			<ymin>113</ymin>
+			<xmax>747</xmax>
+			<ymax>444</ymax>
+		</bndbox>
+	</object>
+</annotation>
