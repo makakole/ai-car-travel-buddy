@@ -14,7 +14,7 @@ public==2019.4.13
 
 pycryptodomex==3.4.7
 
-PyJWT==1.6.4
+PyJWT==2.4.0
 
 python-http-client==3.2.1
 
